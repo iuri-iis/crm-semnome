@@ -1,0 +1,11 @@
+asarPy==1.0.1
+asgiref==3.9.1
+dj-static==0.0.6
+Django==5.2.6
+django-stdimage==6.0.2
+gunicorn==23.0.0
+packaging==25.0
+pillow==11.3.0
+psycopg2-binary==2.9.10
+sqlparse==0.5.3
+static3==0.7.0

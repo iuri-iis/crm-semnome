@@ -1,0 +1,1 @@
+web: gunicorn AppCrm.wsgi --log-file - 

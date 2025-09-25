@@ -44,7 +44,11 @@ class PostalCode(Base):
 #Definição de tipos de pessoa física e jurídica (CPF e CNPJ ou outros documentos, se considerar outros países)
 class TaxType(Base):
     name = models.CharField('Documento Fiscal', max_length=40)
+    character_limit = models.IntegerField('Limite de caracteres', default=20)
 
+    def __str__(self):
+        return self.name
+    
     class Meta:
         verbose_name = 'Documento Fiscal'
         verbose_name_plural = 'Documentos Fiscais'
@@ -56,6 +60,7 @@ class Person(Base):
 
     def __str__(self):
         return self.tax_id
+    
     class Meta:
         verbose_name = 'Pessoa'
         verbose_name_plural = 'Pessoas'
@@ -65,6 +70,9 @@ class NaturalPerson(Person): #Pessoa física
     last_name = models.CharField('Sobrenome', max_length=255)
     birth_date = models.DateField('Data de Nascimento')
 
+    def __str__(self):
+        return f'{self.first_name} {self.last_name}'
+    
     class Meta:
         verbose_name = 'Pessoa física'
         verbose_name_plural = 'Pessoas físicas'

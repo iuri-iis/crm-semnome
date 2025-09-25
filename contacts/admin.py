@@ -20,6 +20,10 @@ class NaturalPersonAdmin(admin.ModelAdmin):
 class LegalPersonAdmin(admin.ModelAdmin):
     list_display = ('created_at', 'modified_at', 'is_active', 'company_name', 'tax_id', 'tax_type')
 
+@admin.register(TaxType)
+class TaxTypeAdmin(admin.ModelAdmin):
+    list_display = ('created_at', 'modified_at', 'is_active', 'id', 'name', 'character_limit')
+
 @admin.register(UseType)
 class UseTypeAdmin(admin.ModelAdmin):
     list_display = ('created_at', 'modified_at', 'is_active', 'id', 'name')

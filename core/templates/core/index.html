@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="utf-8">
-        <title>Página inicial - Core</title>
-    </head>
+{% extends 'AppCrm/templates/base.html' %}
+{% load static %}
+{% block content %}
     <body>
         <p>{{ curso }}</p>
         <p>{{ outro }}</p>
         <a href="{% url 'contacts:listar_contatos' %}">Clientes</a>
     </body>
-</html>
+{% endblock %}

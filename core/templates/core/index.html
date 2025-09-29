@@ -2,10 +2,11 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8">
-        <title>Página inicial - Template</title>
+        <title>Página inicial - Core</title>
     </head>
     <body>
         <p>{{ curso }}</p>
         <p>{{ outro }}</p>
+        <a href="{% url 'contacts:listar_contatos' %}">Clientes</a>
     </body>
 </html>

@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Página inicial - Template</title>
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+        
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <div class="header-content">
+                    <div class="logo">
+                        {logo}
+                    </div>
+                    <div class="title">
+                        <p>Título</p>
+                    </div>
+                    
+                    <div class="menu">
+                        <a href="" class="btn btn-tertiary"><span>Página inicial</span></a>
+                        <a href="" class="btn btn-tertiary"><span>Funcionalidades</span></a>
+                        <a href="" class="btn btn-tertiary"><span>Planos & Preços</span></a>
+                        <a href="" class="btn btn-tertiary"><span>Sobre nós</span></a>
+                        <a href="" class="btn btn-tertiary"><span>Suporte</span></a>
+                        <a href="" class="btn btn-secondary"><span>Logar</span></a>
+                        <a href="" class="btn btn-primary"><span>Assine um plano</span></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>

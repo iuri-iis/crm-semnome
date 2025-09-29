@@ -1,0 +1,12 @@
+/*Decoration*/
+@import url("./base.css");
+@import url("./colors.css");
+@import url("./fonts.css");
+
+/*Components*/
+@import url("components/alerts.css");
+@import url("components/button.css");
+@import url("components/footer.css");
+@import url("components/header.css");
+@import url("components/logo.css");
+@import url("components/title.css");

@@ -1,0 +1,8 @@
+{% extends 'AppCrm/templates/header.html' %}
+{% load static %}
+{% block content %}
+<content>
+    Tela para apresentar os clientes registrados para aquele usuário
+            <a href="{% url 'contacts:novo_contato' %}">Novo contato</a>
+</content>
+{% endblock %}

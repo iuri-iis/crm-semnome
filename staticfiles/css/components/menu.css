@@ -1,0 +1,8 @@
+@import url("../colors.css");
+@import url("../fonts.css");
+
+.menu{
+    width: 680px;
+    display: flex;
+    justify-content: space-evenly;
+}

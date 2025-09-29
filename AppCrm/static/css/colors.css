@@ -1,0 +1,20 @@
+:root {
+  /* Marca */
+  --color-primary: #2A7F8C;
+  --color-primary-hover: #226875;
+  --color-secondary: #0bc5a6;
+  --color-secondary-hover: #138673;
+
+  /* Neutras */
+  --color-bg: #F6FBFF;
+  --color-surface: #FFFFFF;
+  --color-text: #122033;
+  --color-text-muted: #6B7A86;
+  --color-border: #E6EEF7;
+
+  /* Status */
+  --color-success: #38A169;
+  --color-warning: #DD6B20;
+  --color-error: #E53E3E;
+  --color-info: #3182CE;
+}

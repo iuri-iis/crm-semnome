@@ -1,0 +1,22 @@
+@import url("../colors.css");
+@import url("../fonts.css");
+
+.alert-success {
+    background: var(--color-success);
+    color: #fff;
+}
+
+.alert-warning {
+    background: var(--color-warning);
+    color: #fff;
+}
+
+.alert-error {
+    background: var(--color-error);
+    color: #fff;
+}
+
+.alert-info {
+    background: var(--color-info);
+    color: #fff;
+}

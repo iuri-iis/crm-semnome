@@ -1,0 +1,63 @@
+/* Import das fontes via Google Fonts */
+
+@import url("./colors.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap');
+
+:root {
+  --font-primary: 'Inter', sans-serif;
+  --font-secondary: 'Source Sans 3', sans-serif;
+}
+
+/* Corpo do sistema */
+body {
+  font-family: var(--font-primary);
+  font-size: 16px;       /* base */
+  line-height: 1.5;      /* legibilidade */
+}
+
+/* Hierarquia de títulos */
+h1 {
+  font-family: var(--font-secondary);
+  font-size: 2rem;       /* 32px */
+  font-weight: 700;
+}
+h2 {
+  font-family: var(--font-secondary);
+  font-size: 1.5rem;     /* 24px */
+  font-weight: 600;
+}
+h3 {
+  font-family: var(--font-primary);
+  font-size: 1.25rem;    /* 20px */
+  font-weight: 600;
+}
+
+/* Texto de corpo */
+p, li, span {
+  font-family: var(--font-primary);
+  font-size: 1rem;       /* 16px */
+  font-weight: 400;
+}
+
+/* Texto secundário (notas, labels menores) */
+.small-text {
+  font-family: var(--font-primary);
+  font-size: 0.875rem;   /* 14px */
+  font-weight: 400;
+}
+
+/* Dados em tabelas */
+.table-data {
+  font-family: var(--font-primary);
+  font-size: 0.9375rem;  /* 15px */
+  font-weight: 500;
+  font-feature-settings: "tnum"; /* números tabulares */
+}
+
+/* Navegação lateral */
+.nav-title {
+  font-family: var(--font-secondary);
+  font-size: 0.9375rem;  /* 15px */
+  font-weight: 600;
+}

@@ -19,9 +19,12 @@ from django.urls import path, include
 from django.conf.urls import handler404
 from django.conf.urls.static import static
 from django.conf import settings
+import calendar
 
 urlpatterns = [
     path('portalAdmin/', admin.site.urls),
+    #path('default/', default, )
     path('', include('core.urls', namespace='core')),
     path('clientes/', include('contacts.urls', namespace='contacts')),
-] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT) \
+  + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -8,6 +8,11 @@ from django.template import loader
 from .models import *
 from .forms import *
 
+from django.apps import apps
+
+__app_config = apps.get_app_config('contacts')
+__app_name = __app_config.name
+
 # Create your views here.
 
 def listar_contatos(request):
@@ -15,7 +20,7 @@ def listar_contatos(request):
         'curso': 'Django Framework',
         'outro': 'Django é massa!',
     }
-    return render(request, 'listar_contatos.html', context)
+    return render(request, f'{__app_name}/listar_contatos.html', context)
 
 def novo_contato(request):
     if str(request.user) == 'POST':
@@ -32,10 +37,10 @@ def novo_contato(request):
             print(f'Documento Fiscal: {contato.tax_type}')
             print(f'ID Fiscal: {contato.tax_id}')
                 
-            messages.success(request, 'Cliente salvo com sucesso')
+            messages.success(request, f'{__app_name}/Cliente salvo com sucesso')
             form = NovoContatoForm()
         else:
-            messages.error(request, 'Erro ao salvar cliente')
+            messages.error(request, f'{__app_name}/Erro ao salvar cliente')
 
     else:
         form = NovoContatoForm()
@@ -44,4 +49,4 @@ def novo_contato(request):
         'form': form
     }
 
-    return render(request, 'novo_contato.html', context)
+    return render(request, f'{__app_name}/novo_contato.html', context)

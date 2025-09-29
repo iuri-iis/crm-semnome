@@ -1,0 +1,19 @@
+@import url("../colors.css");
+@import url("../fonts.css");
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: auto;
+    height: 100px;
+    border-bottom: 1px solid var(--color-border);
+    background-color: var(--color-bg);
+}
+
+.header-content{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0px 2px;
+}
